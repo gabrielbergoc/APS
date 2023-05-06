@@ -1,0 +1,65 @@
+[
+  {
+    "date": "2023-04-01",
+    "id": "ec0f8f15-b20a-471c-859d-2eb94c8f0279",
+    "amount": -99.99,
+    "description": "Monthly Subscription",
+    "category": "Utilities"
+  },
+  {
+    "date": "2023-04-02",
+    "id": "7177b0d5-18f7-4a72-a4dd-c170d4b4e4d2",
+    "amount": -43.17,
+    "description": "Grocery Shopping",
+    "category": "Groceries"
+  },
+  {
+    "date": "2023-04-03",
+    "id": "83df6c9f-c7c5-4f5b-98dd-03205b2c4420",
+    "amount": -16.75,
+    "description": "Coffee Shop",
+    "category": "Food & Drink"
+  },
+  {
+    "date": "2023-04-03",
+    "id": "16bdc07a-91bb-4f24-963c-80cbeaf2d8c8",
+    "amount": -217.63,
+    "description": "Car Repairs",
+    "category": "Auto"
+  },
+  {
+    "date": "2023-04-04",
+    "id": "0f1b1391-338a-4d2f-8da5-c7f56d4cb1e3",
+    "amount": 3523.27,
+    "description": "Salary Deposit",
+    "category": "Income"
+  },
+  {
+    "date": "2023-04-05",
+    "id": "47a3ed4b-4b4e-4a11-996a-0d51fde047ea",
+    "amount": -76.42,
+    "description": "Internet Bill Payment",
+    "category": "Utilities"
+  },
+  {
+    "date": "2023-04-06",
+    "id": "6e074f98-129c-4aa4-9792-6d1b37e1b43f",
+    "amount": -50.39,
+    "description": "Movie Tickets",
+    "category": "Entertainment"
+  },
+  {
+    "date": "2023-04-07",
+    "id": "7c812fc5-5e13-4178-9c25-c15793911445",
+    "amount": -28.97,
+    "description": "Grocery Shopping",
+    "category": "Groceries"
+  },
+  {
+    "date": "2023-04-08",
+    "id": "d95e2408-fc92-406e-a0c7-eb77a2b7d385",
+    "amount": -1678.55,
+    "description": "Rent Payment",
+    "category": "Housing"
+  }
+]

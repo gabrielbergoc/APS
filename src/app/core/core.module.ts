@@ -7,6 +7,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { RouterModule } from '@angular/router';
 import { HeaderComponent } from './layout/header/header.component';
 import { FooterComponent } from './layout/footer/footer.component';
+import { DashboardModule } from '../dashboard/dashboard.module';
 
 
 
@@ -22,6 +23,7 @@ import { FooterComponent } from './layout/footer/footer.component';
   imports: [
     CommonModule,
     RouterModule,
+    DashboardModule,
   ]
 })
 export class CoreModule { }

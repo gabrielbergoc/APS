@@ -1,1 +1,4 @@
-<p>dashboard works!</p>
+<app-table
+  [dataSource]="(transactions$ | async) ?? []"
+  [columns]="columns"
+></app-table>
