@@ -1,0 +1,21 @@
+:host {
+  background-color: #f8f9fa;
+  border-top: 1px solid #e9ecef;
+  padding: 1rem 0;
+  justify-content: center;
+  display: flex;
+  margin-top: auto;
+  width: 100%;
+
+  .footer {
+    color: #6c757d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+    font-size: 0.7rem;
+    height: 12px;
+  }
+}
