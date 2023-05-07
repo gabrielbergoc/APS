@@ -18,11 +18,11 @@ import { CurrencyPipe } from '@angular/common';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     CoreModule,
     UserModule,
     HomeModule,
     TransactionsModule,
-    BrowserAnimationsModule,
     SharedModule,
     RouterModule.forRoot(appRoutes),
   ],
