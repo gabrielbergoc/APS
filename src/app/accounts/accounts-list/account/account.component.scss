@@ -1,0 +1,19 @@
+.mat-mdc-card-header {
+  justify-content: space-between;
+
+  .title-container {
+    margin-right: auto;
+  }
+
+  .buttons-container {
+    margin-left: 0;
+
+    .mat-mdc-button {
+      min-width: unset;
+
+      .mat-icon {
+        margin: 0;
+      }
+    }
+  }
+}

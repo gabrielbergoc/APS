@@ -6,6 +6,7 @@ import { NotFoundComponent } from "./core/not-found/not-found.component";
 import { HomeComponent } from "./home/home/home.component";
 import { TransactionsListComponent } from "./transactions/transactions-list/transactions-list.component";
 import { UserProfileComponent } from "./user/user-profile/user-profile.component";
+import { AccountsListComponent } from "./accounts/accounts-list/accounts-list.component";
 
 export const appRoutes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -17,6 +18,7 @@ export const appRoutes: Routes = [
       { path: 'home', component: HomeComponent },
       { path: 'profile', component: UserProfileComponent },
       { path: 'transactions', component: TransactionsListComponent },
+      { path: 'accounts', component: AccountsListComponent },
     ],
   },
   { path: '404', component: NotFoundComponent },

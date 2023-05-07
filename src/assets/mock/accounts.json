@@ -1,0 +1,25 @@
+[
+  {
+    "bankId": "1a2b3c4d",
+    "bankName": "Bank of America",
+    "accountNumber": "123456789",
+    "accountAlias": "Personal Checking"
+  },
+  {
+    "bankId": "5e6f7g8h",
+    "bankName": "Chase Bank",
+    "accountNumber": "987654321",
+    "accountAlias": "Savings"
+  },
+  {
+    "bankId": "9i8u7y6t",
+    "bankName": "Wells Fargo",
+    "accountNumber": "24681012",
+    "accountAlias": "Business Checking"
+  },
+  {
+    "bankId": "0p9o8i7u",
+    "bankName": "TD Bank",
+    "accountNumber": "135791113"
+  }
+]

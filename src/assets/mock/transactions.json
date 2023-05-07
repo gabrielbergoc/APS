@@ -94,46 +94,6 @@
     "method": "Pix"
   },
   {
-    "date": "2023-04-02",
-    "id": "62f23f70-1740-46cf-9a8a-58ab7d34e279",
-    "amount": 302.67,
-    "description": "Part-Time Job",
-    "category": "Income",
-    "bank": "Banco do Brasil",
-    "account": "011235-8",
-    "method": "Transfer"
-  },
-  {
-    "date": "2023-04-03",
-    "id": "1f189b6e-b9fa-4603-84d3-e431f69d62b8",
-    "amount": 1000.0,
-    "description": "Gift from Grandparents",
-    "category": "Income",
-    "bank": "Banco do Brasil",
-    "account": "011235-8",
-    "method": "Transfer"
-  },
-  {
-    "date": "2023-04-04",
-    "id": "5f5fb5ed-ec01-4251-a8b6-49ba7a954a4e",
-    "amount": 2500.0,
-    "description": "Bonus at Work",
-    "category": "Income",
-    "bank": "Banco do Brasil",
-    "account": "011235-8",
-    "method": "Transfer"
-  },
-  {
-    "date": "2023-04-05",
-    "id": "0736169c-d5d5-4a38-9523-0113f2ccff21",
-    "amount": 756.21,
-    "description": "Contract Work",
-    "category": "Income",
-    "bank": "Santander",
-    "account": "31415-9",
-    "method": "Transfer"
-  },
-  {
     "date": "2023-04-06",
     "id": "128a8a9a-d9d9-4722-84d8-b387529317d1",
     "amount": 150.0,

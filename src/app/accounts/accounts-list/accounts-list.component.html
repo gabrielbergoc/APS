@@ -1,0 +1,6 @@
+<!-- <mat-accordion displayMode="flat"> -->
+  <app-account
+    *ngFor="let account of accounts$ | async"
+    [account]="account"
+  ></app-account>
+<!-- </mat-accordion> -->
