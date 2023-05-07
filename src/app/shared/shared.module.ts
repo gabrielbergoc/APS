@@ -1,14 +1,17 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MatTableModule } from '@angular/material/table';
-import { MatToolbarModule } from '@angular/material/toolbar';
+import { HttpClientModule } from '@angular/common/http';
+import { NgModule } from '@angular/core';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
+import { MatDialogModule } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
+import { MatTableModule } from '@angular/material/table';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { NgxChartsModule } from '@swimlane/ngx-charts';
 
 import { TableComponent } from './components/table/table.component';
 import { MapToPipe } from './pipes/map-to.pipe';
-import { HttpClientModule } from '@angular/common/http';
-import { NgxChartsModule } from '@swimlane/ngx-charts';
 
 const angularModules = [
   CommonModule,
@@ -20,6 +23,9 @@ const angularMaterialModules = [
   MatToolbarModule,
   MatIconModule,
   MatMenuModule,
+  MatCardModule,
+  MatDialogModule,
+  MatButtonModule,
 ]
 
 const declarations = [

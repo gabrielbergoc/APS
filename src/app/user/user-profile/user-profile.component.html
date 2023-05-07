@@ -1,1 +1,16 @@
-<p>user-profile works!</p>
+<mat-card>
+  <div class="profile-container">
+    <div class="profile-picture-container">
+      <img mat-card-image class="profile-picture" [src]="user.pictureUrl" alt="User Profile Picture">
+    </div>
+    <div class="profile-details">
+      <h2>{{user.name}}</h2>
+      <p>{{user.email}}</p>
+    </div>
+
+  </div>
+  <mat-card-actions>
+    <button mat-button color="primary" (click)="changePassword()">Change Password</button>
+    <button mat-button color="warn" (click)="deleteAccount()">Delete Account</button>
+  </mat-card-actions>
+</mat-card>
