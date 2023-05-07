@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { Transaction, TransactionService } from '../services/transaction/transaction.service';
 import { Observable, combineLatest, map, switchMap, tap } from 'rxjs';
+
+import { Transaction, TransactionService } from 'src/app/shared/services/transaction/transaction.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -32,33 +33,6 @@ export class DashboardComponent {
       }
     ]),
   );
-  columns = [
-    {
-      def: 'date',
-      header: 'Date',
-      content: (transaction: Transaction) => transaction.date
-    },
-    {
-      def: 'id',
-      header: 'Transaction ID',
-      content: (transaction: Transaction) => transaction.id
-    },
-    {
-      def: 'amount',
-      header: 'Amount',
-      content: (transaction: Transaction) => transaction.amount
-    },
-    {
-      def: 'description',
-      header: 'Description',
-      content: (transaction: Transaction) => transaction.description
-    },
-    {
-      def: 'category',
-      header: 'Category',
-      content: (transaction: Transaction) => transaction.category
-    },
-  ];
 
   constructor(
     private readonly transactionService: TransactionService,

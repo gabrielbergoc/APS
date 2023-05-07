@@ -34,9 +34,9 @@ const importsExports = [
     ...angularMaterialModules,
   ],
   exports: [
+    ...declarations,
     ...importsExports,
     ...angularModules,
-    ...declarations,
     ...angularMaterialModules,
   ]
 })

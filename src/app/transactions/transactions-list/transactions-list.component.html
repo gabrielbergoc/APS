@@ -1,0 +1,6 @@
+<div class="table-container">
+  <app-table
+    [dataSource]="(transactions$ | async) ?? []"
+    [columns]="columns"
+  ></app-table>
+</div>

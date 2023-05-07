@@ -1,10 +1,3 @@
-<div class="table-container">
-  <app-table
-    [dataSource]="(transactions$ | async) ?? []"
-    [columns]="columns"
-  ></app-table>
-</div>
-
 <div class="chart-container">
   <ngx-charts-advanced-pie-chart
     [results]="expenses$ | async"

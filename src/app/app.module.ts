@@ -8,7 +8,8 @@ import { CoreModule } from './core/core.module';
 import { UserModule } from './user/user.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedModule } from './shared/shared.module';
-import { DashboardModule } from './dashboard/dashboard.module';
+import { HomeModule } from './home/home.module';
+import { TransactionsModule } from './transactions/transactions.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { DashboardModule } from './dashboard/dashboard.module';
     BrowserModule,
     CoreModule,
     UserModule,
-    DashboardModule,
+    HomeModule,
+    TransactionsModule,
     BrowserAnimationsModule,
     SharedModule,
     RouterModule.forRoot(appRoutes),
