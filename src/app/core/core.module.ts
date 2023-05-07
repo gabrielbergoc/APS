@@ -6,6 +6,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { RouterModule } from '@angular/router';
 import { HeaderComponent } from './layout/header/header.component';
 import { FooterComponent } from './layout/footer/footer.component';
+import { SharedModule } from '../shared/shared.module';
+import { LinkComponent } from './layout/header/link/link.component';
 
 @NgModule({
   declarations: [
@@ -14,10 +16,12 @@ import { FooterComponent } from './layout/footer/footer.component';
     NotFoundComponent,
     HeaderComponent,
     FooterComponent,
+    LinkComponent,
   ],
   imports: [
     CommonModule,
     RouterModule,
+    SharedModule,
   ]
 })
 export class CoreModule { }

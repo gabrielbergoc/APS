@@ -1,1 +1,29 @@
-<p>header works!</p>
+<mat-toolbar>
+  <div *ngIf="!isMenuCollapsed; else menu">
+    <app-link link="/">MyFinances</app-link>
+    <app-link link="/home">Home</app-link>
+    <app-link link="/transactions">Transactions</app-link>
+    <app-link link="/profile">Profile</app-link>
+  </div>
+
+  <ng-template #menu>
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <app-link link="/">MyFinances</app-link>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item routerLink="home" routerLinkActive="active">
+        <mat-icon>home</mat-icon>
+        <span>Home</span>
+      </button>
+      <button mat-menu-item routerLink="transactions" routerLinkActive="active">
+        <mat-icon>paid</mat-icon>
+        <span>Transactions</span>
+      </button>
+      <button mat-menu-item routerLink="profile" routerLinkActive="active">
+        <mat-icon>account_circle</mat-icon>
+        <span>Profile</span>
+      </button>
+    </mat-menu>
+  </ng-template>
+</mat-toolbar>

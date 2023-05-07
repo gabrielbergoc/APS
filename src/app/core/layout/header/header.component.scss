@@ -1,0 +1,13 @@
+.spacer {
+  flex: 1 1 auto;
+}
+
+@media (max-width: 767px) {
+  .mat-menu-panel {
+    display: none !important;
+  }
+}
+
+.active {
+  background-color: #e0e0e0;
+}

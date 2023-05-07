@@ -1,0 +1,11 @@
+.link-container {
+  display: inline;
+  flex-direction: row;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.active {
+  background-color: #e0e0e0;
+  border-radius: 5px;
+}
