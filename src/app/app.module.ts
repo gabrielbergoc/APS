@@ -10,6 +10,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedModule } from './shared/shared.module';
 import { HomeModule } from './home/home.module';
 import { TransactionsModule } from './transactions/transactions.module';
+import { CurrencyPipe } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,9 @@ import { TransactionsModule } from './transactions/transactions.module';
     SharedModule,
     RouterModule.forRoot(appRoutes),
   ],
-  providers: [],
+  providers: [
+    CurrencyPipe,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

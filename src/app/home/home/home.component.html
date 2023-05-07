@@ -1,1 +1,56 @@
-<app-dashboard></app-dashboard>
+<mat-accordion>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>Balance</mat-panel-title>
+    </mat-expansion-panel-header>
+    {{ balance$ | async | currency }}
+  </mat-expansion-panel>
+</mat-accordion>
+
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title>Expenses</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <ngx-charts-advanced-pie-chart
+            [results]="expenses$ | async"
+            [valueFormatting]="currencyTransform"
+          ></ngx-charts-advanced-pie-chart>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title>Income</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <ngx-charts-advanced-pie-chart
+            [results]="income$ | async"
+            [valueFormatting]="currencyTransform"
+          ></ngx-charts-advanced-pie-chart>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title>Totals</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <ngx-charts-bar-vertical
+            [results]="totals$ | async"
+            [xAxis]="true"
+          ></ngx-charts-bar-vertical>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</div>
