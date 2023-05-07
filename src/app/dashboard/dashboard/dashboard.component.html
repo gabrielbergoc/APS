@@ -1,4 +1,24 @@
-<app-table
-  [dataSource]="(transactions$ | async) ?? []"
-  [columns]="columns"
-></app-table>
+<div class="table-container">
+  <app-table
+    [dataSource]="(transactions$ | async) ?? []"
+    [columns]="columns"
+  ></app-table>
+</div>
+
+<div class="chart-container">
+  <ngx-charts-advanced-pie-chart
+    [results]="expenses$ | async"
+  ></ngx-charts-advanced-pie-chart>
+</div>
+<div class="chart-container">
+  <ngx-charts-advanced-pie-chart
+    [results]="income$ | async"
+  ></ngx-charts-advanced-pie-chart>
+</div>
+<div class="chart-container">
+  <ngx-charts-bar-vertical
+    [results]="totals$ | async"
+    [view]="[700, 400]"
+    [legend]="true"
+  ></ngx-charts-bar-vertical>
+</div>
