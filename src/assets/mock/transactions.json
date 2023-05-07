@@ -4,125 +4,153 @@
     "id": "ec0f8f15-b20a-471c-859d-2eb94c8f0279",
     "amount": -99.99,
     "description": "Monthly Subscription",
-    "category": "Utilities"
+    "category": "Utilities",
+    "accountAlias": "Purple",
+    "method": "Credit"
   },
   {
     "date": "2023-04-02",
     "id": "7177b0d5-18f7-4a72-a4dd-c170d4b4e4d2",
     "amount": -43.17,
     "description": "Grocery Shopping",
-    "category": "Groceries"
+    "category": "Groceries",
+    "accountAlias": "Purple",
+    "method": "Credit"
   },
   {
     "date": "2023-04-03",
     "id": "83df6c9f-c7c5-4f5b-98dd-03205b2c4420",
     "amount": -16.75,
     "description": "Coffee Shop",
-    "category": "Food & Drink"
+    "category": "Food & Drink",
+    "accountAlias": "Purple",
+    "method": "Credit"
   },
   {
     "date": "2023-04-03",
     "id": "16bdc07a-91bb-4f24-963c-80cbeaf2d8c8",
     "amount": -217.63,
     "description": "Car Repairs",
-    "category": "Auto"
+    "category": "Auto",
+    "accountAlias": "Purple",
+    "method": "Debit"
   },
   {
     "date": "2023-04-04",
     "id": "0f1b1391-338a-4d2f-8da5-c7f56d4cb1e3",
     "amount": 3523.27,
     "description": "Salary Deposit",
-    "category": "Income"
+    "category": "Income",
+    "accountAlias": "Purple",
+    "method": "Transfer"
   },
   {
     "date": "2023-04-05",
     "id": "47a3ed4b-4b4e-4a11-996a-0d51fde047ea",
     "amount": -76.42,
     "description": "Internet Bill Payment",
-    "category": "Utilities"
+    "category": "Utilities",
+    "accountAlias": "Purple",
+    "method": "Debit"
   },
   {
     "date": "2023-04-06",
     "id": "6e074f98-129c-4aa4-9792-6d1b37e1b43f",
     "amount": -50.39,
     "description": "Movie Tickets",
-    "category": "Entertainment"
+    "category": "Entertainment",
+    "bank": "Banco do Brasil",
+    "account": "011235-8",
+    "method": "Credit"
   },
   {
     "date": "2023-04-07",
     "id": "7c812fc5-5e13-4178-9c25-c15793911445",
     "amount": -28.97,
     "description": "Grocery Shopping",
-    "category": "Groceries"
+    "category": "Groceries",
+    "bank": "Banco do Brasil",
+    "account": "011235-8",
+    "method": "Credit"
   },
   {
     "date": "2023-04-08",
     "id": "d95e2408-fc92-406e-a0c7-eb77a2b7d385",
     "amount": -1678.55,
     "description": "Rent Payment",
-    "category": "Housing"
+    "category": "Housing",
+    "bank": "Banco do Brasil",
+    "account": "011235-8",
+    "method": "Pix"
   },
   {
     "date": "2023-04-01",
     "id": "d5c5b925-1f5d-4ee0-aa4e-c4df6409e877",
     "amount": 521.39,
     "description": "Freelance Work",
-    "category": "Income"
+    "category": "Income",
+    "bank": "Banco do Brasil",
+    "account": "011235-8",
+    "method": "Pix"
   },
   {
     "date": "2023-04-02",
     "id": "62f23f70-1740-46cf-9a8a-58ab7d34e279",
     "amount": 302.67,
     "description": "Part-Time Job",
-    "category": "Income"
+    "category": "Income",
+    "bank": "Banco do Brasil",
+    "account": "011235-8",
+    "method": "Transfer"
   },
   {
     "date": "2023-04-03",
     "id": "1f189b6e-b9fa-4603-84d3-e431f69d62b8",
     "amount": 1000.0,
     "description": "Gift from Grandparents",
-    "category": "Income"
+    "category": "Income",
+    "bank": "Banco do Brasil",
+    "account": "011235-8",
+    "method": "Transfer"
   },
   {
     "date": "2023-04-04",
     "id": "5f5fb5ed-ec01-4251-a8b6-49ba7a954a4e",
     "amount": 2500.0,
     "description": "Bonus at Work",
-    "category": "Income"
+    "category": "Income",
+    "bank": "Banco do Brasil",
+    "account": "011235-8",
+    "method": "Transfer"
   },
   {
     "date": "2023-04-05",
     "id": "0736169c-d5d5-4a38-9523-0113f2ccff21",
     "amount": 756.21,
     "description": "Contract Work",
-    "category": "Income"
+    "category": "Income",
+    "bank": "Santander",
+    "account": "31415-9",
+    "method": "Transfer"
   },
   {
     "date": "2023-04-06",
     "id": "128a8a9a-d9d9-4722-84d8-b387529317d1",
     "amount": 150.0,
     "description": "Cash Gift from Friend",
-    "category": "Income"
-  },
-  {
-    "date": "2023-04-07",
-    "id": "7b559d17-c5e5-4f5d-a2d6-872a4b4de3da",
-    "amount": 892.1,
-    "description": "Commission from Sale",
-    "category": "Income"
-  },
-  {
-    "date": "2023-04-08",
-    "id": "f18654d6-34df-4e2f-9c8f-36c97d81ef96",
-    "amount": 1225.5,
-    "description": "Bonus from Company",
-    "category": "Income"
+    "category": "Income",
+    "bank": "Santander",
+    "account": "31415-9",
+    "method": "Pix"
   },
   {
     "date": "2023-04-09",
     "id": "1b49ed1a-60b2-4829-b211-00b2ca2a8c85",
     "amount": 375.0,
     "description": "Cash Gift from Parents",
-    "category": "Income"
+    "category": "Income",
+    "bank": "Santander",
+    "account": "31415-9",
+    "method": "Pix"
   }
 ]

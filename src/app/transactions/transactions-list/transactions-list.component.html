@@ -1,6 +1,3 @@
-<div class="table-container">
-  <app-table
-    [dataSource]="(transactions$ | async) ?? []"
-    [columns]="columns"
-  ></app-table>
-</div>
+<mat-accordion displayMode="flat" multi>
+  <app-transaction *ngFor="let transaction of transactions$ | async" [transaction]="transaction"></app-transaction>
+</mat-accordion>

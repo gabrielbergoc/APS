@@ -8,6 +8,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatTableModule } from '@angular/material/table';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatExpansionModule } from '@angular/material/expansion';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
 
 import { TableComponent } from './components/table/table.component';
@@ -26,6 +27,7 @@ const angularMaterialModules = [
   MatCardModule,
   MatDialogModule,
   MatButtonModule,
+  MatExpansionModule,
 ]
 
 const declarations = [

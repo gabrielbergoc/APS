@@ -8,6 +8,10 @@ export interface Transaction {
   amount: number;
   description: string;
   category: string;
+  bank: string;
+  account: string;
+  accountAlias: string;
+  method: string;
 }
 
 @Injectable({
