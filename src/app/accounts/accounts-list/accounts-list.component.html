@@ -1,6 +1,11 @@
-<!-- <mat-accordion displayMode="flat"> -->
-  <app-account
-    *ngFor="let account of accounts$ | async"
-    [account]="account"
-  ></app-account>
-<!-- </mat-accordion> -->
+<button
+  mat-mini-fab
+  class="add-account-button"
+  title="Add account"
+>
+  <mat-icon>add</mat-icon>
+</button>
+<app-account
+  *ngFor="let account of accounts$ | async"
+  [account]="account"
+></app-account>
