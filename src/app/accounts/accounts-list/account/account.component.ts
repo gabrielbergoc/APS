@@ -7,5 +7,5 @@ import { Account } from '../../services/account/account.service';
   styleUrls: ['./account.component.scss']
 })
 export class AccountComponent {
-  @Input() account?: Account;
+  @Input({ required: true }) account!: Account;
 }

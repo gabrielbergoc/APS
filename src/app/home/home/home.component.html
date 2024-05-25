@@ -1,21 +1,17 @@
-<button
-  mat-mini-fab
-  class="download-button"
-  title="Download Financial Summary"
->
+<button mat-mini-fab class="download-button" title="Download Financial Summary">
   <mat-icon>download</mat-icon>
 </button>
 
-<mat-accordion>
-  <mat-expansion-panel>
-    <mat-expansion-panel-header>
-      <mat-panel-title>Balance</mat-panel-title>
-    </mat-expansion-panel-header>
-    {{ balance$ | async | currency }}
-  </mat-expansion-panel>
-</mat-accordion>
-
 <div class="container">
+  <mat-accordion>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>Balance</mat-panel-title>
+      </mat-expansion-panel-header>
+      {{ balance$ | async | currency }}
+    </mat-expansion-panel>
+  </mat-accordion>
+
   <div class="row">
     <div class="col-12">
       <mat-card>

@@ -39,3 +39,16 @@
   justify-content: start;
   align-items: start;
 }
+
+.buttons-container {
+  display: flex;
+  justify-content: end;
+
+  button {
+    min-width: unset;
+
+    .mat-icon {
+      margin: 0;
+    }
+  }
+}

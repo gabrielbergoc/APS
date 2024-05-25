@@ -1,0 +1,16 @@
+@mixin host {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  justify-content: center;
+
+  @media screen {
+
+  }
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

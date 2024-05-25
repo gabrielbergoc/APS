@@ -7,5 +7,5 @@ import { Transaction } from 'src/app/shared/services/transaction/transaction.ser
   styleUrls: ['./transaction.component.scss']
 })
 export class TransactionComponent {
-  @Input() transaction?: Transaction;
+  @Input({ required: true }) transaction!: Transaction;
 }

@@ -1,7 +1,12 @@
 @import '@angular/material/theming';
+@import 'src/assets/style/mixins';
 
 @include mat-core();
 $color-primary: mat-palette($mat-deep-purple);
+
+:host {
+  @include host();
+}
 
 .download-button {
   position: absolute;

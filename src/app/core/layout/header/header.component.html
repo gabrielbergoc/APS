@@ -1,6 +1,6 @@
 <mat-toolbar color="primary">
   <div *ngIf="!isMenuCollapsed; else menu">
-    <app-link link="/">MyFinances</app-link>
+    <app-link link="/">OneBanking</app-link>
     <app-link link="/home">Home</app-link>
     <app-link link="/transactions">Transactions</app-link>
     <app-link link="/accounts">Accounts</app-link>
@@ -11,7 +11,7 @@
     <button mat-icon-button [matMenuTriggerFor]="menu">
       <mat-icon>menu</mat-icon>
     </button>
-    <app-link link="/">MyFinances</app-link>
+    <app-link link="/">OneBanking</app-link>
     <mat-menu #menu="matMenu">
       <button mat-menu-item routerLink="home" routerLinkActive="active">
         <mat-icon>home</mat-icon>

@@ -1,5 +1,7 @@
-.mat-mdc-card {
-  padding: 20px;
+@import "src/assets/style/mixins";
+
+:host {
+  @include host();
 }
 
 .profile-container {
@@ -25,4 +27,3 @@
     }
   }
 }
-

@@ -1,37 +1,40 @@
-<ng-container *ngIf="transaction">
-  <mat-expansion-panel>
-    <mat-expansion-panel-header>
-      <mat-panel-title>
-        <mat-icon>{{ transaction.category | categoryToIcon }}</mat-icon>
-        <span>{{ transaction.amount | currency }}</span>
-      </mat-panel-title>
-      <mat-panel-description>
-        {{ transaction.description }}
-      </mat-panel-description>
-      {{ transaction.date | date }}
-    </mat-expansion-panel-header>
-    <div class="panel-content">
-      <div class="details">
-        <div class="account-alias" *ngIf="transaction.accountAlias; else bankDetails">
-          <strong>Account:</strong> {{ transaction.accountAlias }}
-        </div>
-        <ng-template #bankDetails>
-          <div class="bank-details">
-            <div class="bank">
-              <strong>Bank:</strong> {{ transaction.bank }}
-            </div>
-            <div class="account">
-              <strong>Account:</strong> {{ transaction.account }}
-            </div>
-          </div>
-        </ng-template>
-        <div>
-          <strong>Method:</strong> {{ transaction.method }}
-        </div>
+<mat-expansion-panel>
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      <mat-icon>{{ transaction.category | categoryToIcon }}</mat-icon>
+      <span>{{ transaction.amount | currency }}</span>
+    </mat-panel-title>
+    <mat-panel-description>
+      {{ transaction.description }}
+    </mat-panel-description>
+    {{ transaction.date | date }}
+  </mat-expansion-panel-header>
+  <div class="panel-content">
+    <div class="details">
+      <div
+        class="account-alias"
+        *ngIf="transaction.accountAlias; else bankDetails"
+      >
+        <strong>Account:</strong> {{ transaction.accountAlias }}
       </div>
+      <ng-template #bankDetails>
+        <div class="bank-details">
+          <div class="bank"><strong>Bank:</strong> {{ transaction.bank }}</div>
+          <div class="account">
+            <strong>Account:</strong> {{ transaction.account }}
+          </div>
+        </div>
+      </ng-template>
+      <div><strong>Method:</strong> {{ transaction.method }}</div>
+    </div>
+
+    <div class="buttons-container">
       <button mat-button color="primary">
         <mat-icon>edit</mat-icon>
       </button>
+      <button mat-button color="warn">
+        <mat-icon>delete</mat-icon>
+      </button>
     </div>
-  </mat-expansion-panel>
-</ng-container>
+  </div>
+</mat-expansion-panel>
