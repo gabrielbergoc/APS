@@ -1,7 +1,7 @@
 <mat-expansion-panel>
   <mat-expansion-panel-header>
     <mat-panel-title>
-      <mat-icon>{{ transaction.category | categoryToIcon }}</mat-icon>
+      <mat-icon [title]="transaction.category">{{ transaction.category | categoryToIcon }}</mat-icon>
       <span>{{ transaction.amount | currency }}</span>
     </mat-panel-title>
     <mat-panel-description>
@@ -29,10 +29,10 @@
     </div>
 
     <div class="buttons-container">
-      <button mat-button color="primary">
+      <button mat-button color="primary" title="Edit transaction">
         <mat-icon>edit</mat-icon>
       </button>
-      <button mat-button color="warn">
+      <button mat-button color="warn" title="Delete transaction">
         <mat-icon>delete</mat-icon>
       </button>
     </div>

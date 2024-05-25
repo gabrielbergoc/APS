@@ -1,16 +1,17 @@
-import { CommonModule, CurrencyPipe } from '@angular/common';
+import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatDialogModule } from '@angular/material/dialog';
+import { MatExpansionModule } from '@angular/material/expansion';
 import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatTableModule } from '@angular/material/table';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatExpansionModule } from '@angular/material/expansion';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
 
+import { FloatingButtonComponent } from './components/floating-button/floating-button.component';
 import { TableComponent } from './components/table/table.component';
 import { MapToPipe } from './pipes/map-to.pipe';
 
@@ -33,6 +34,7 @@ const angularMaterialModules = [
 const declarations = [
   TableComponent,
   MapToPipe,
+  FloatingButtonComponent,
 ];
 
 const importsExports = [
@@ -41,7 +43,7 @@ const importsExports = [
 
 @NgModule({
   declarations: [
-    ...declarations
+    ...declarations,
   ],
   imports: [
     ...importsExports,

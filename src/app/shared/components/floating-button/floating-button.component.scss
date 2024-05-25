@@ -1,0 +1,20 @@
+@use '@angular/material' as mat;
+@import 'src/assets/style/theme';
+
+:host {
+  display: contents;
+}
+
+.floating-button {
+  position: absolute;
+  top: 24px;
+  right: 12px;
+  z-index: 2;
+  background-color: wheat;
+
+  ::ng-deep .mat-icon {
+    margin: 0;
+    padding: 0;
+    color: mat.get-color-from-palette($primary, 500);
+  }
+}

@@ -1,25 +1,8 @@
-@import '@angular/material/theming';
 @import 'src/assets/style/mixins';
-
-@include mat-core();
-$color-primary: mat-palette($mat-deep-purple);
+@import '@angular/material/theming';
 
 :host {
   @include host();
-}
-
-.add-account-button {
-  position: absolute;
-  top: 24px;
-  right: 12px;
-  z-index: 2;
-  background-color: wheat;
-
-  .mat-icon {
-    margin: 0;
-    padding: 0;
-    color: mat-color($color-primary);
-  }
 }
 
 .container {
