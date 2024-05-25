@@ -1,6 +1,8 @@
+@use "@angular/material" as mat;
+@import "src/assets/style/theme";
+
 .link-container {
   display: inline;
-  flex-direction: row;
   padding: 5px 10px;
   cursor: pointer;
 }
@@ -8,4 +10,5 @@
 .active {
   background-color: #e0e0e0;
   border-radius: 5px;
+  color: mat.get-color-from-palette($primary, 500);
 }
